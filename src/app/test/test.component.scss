@@ -1,5 +1,5 @@
 fieldset{
-    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
     width: 60%;
     margin: auto;
     display: flex;
@@ -7,6 +7,7 @@ fieldset{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
     gap: 20px; 
     input{
         padding: 4px;
@@ -16,5 +17,6 @@ fieldset{
         text-indent: 3px;
         background-color: transparent;
         border-bottom: 2px solid #ccc;
+        color:#fff;
     }
 }

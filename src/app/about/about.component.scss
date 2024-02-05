@@ -1,0 +1,42 @@
+$black-gradient: linear-gradient(144.39deg, #fff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+$info-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+
+.info-container {
+    position: relative;
+    .info-angular {
+        // add linear gradient to text
+        background: radial-gradient(64.18% 64.18% at 71.16% 35.68%,
+                #def9fa 0.89%,
+                #bef3f5 17.23%,
+                #9dedf0 42.4%,
+                #7de7eb 55.12%,
+                #5ce1e6 71.54%,
+                #33bbcf 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: monospace;
+        white-space: wrap;
+        word-spacing: 2px;
+        box-shadow: $info-shadow;
+        .white-shadow {
+            background: rgba(255, 255, 255, 0.6);
+            filter: blur(750px);
+            box-shadow: $info-shadow;
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            top: 0;
+            bottom: 0;
+        }
+    }
+}
+
+.img-container{
+    background: $black-gradient;
+    box-shadow: $info-shadow;
+}
+
+
+// constants

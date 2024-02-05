@@ -5,7 +5,7 @@ import { Works } from "./works";
   providedIn: 'root'
 })
 export class WorksService {
-  public updateAddSwitch:string='add';
+  public updateAddSwitch: string = 'add';
   private worksList: Works[] = [
     {
       id: 1,
@@ -42,7 +42,14 @@ export class WorksService {
     if (index !== -1) {
       this.worksList[index].work = newWork;
       console.log(this.worksList);
-      
     }
+  }
+  deleteWork(id: number): void {
+    console.log("Deleting work with id:", id);
+    console.log("Before deletion:", this.worksList);
+
+    this.worksList = this.worksList.filter((work) => work.id !== id);
+
+    console.log("After deletion:", this.worksList);
   }
 }

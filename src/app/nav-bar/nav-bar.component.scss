@@ -1,0 +1,32 @@
+nav {
+    align-items: center;
+
+    .container {
+        padding: 0;
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 25px;
+            font-weight: 800;
+            background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                a {
+                    font-family: monospace;
+                    font-size: 20px;
+                    font-weight: 800;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

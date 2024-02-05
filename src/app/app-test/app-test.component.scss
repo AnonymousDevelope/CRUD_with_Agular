@@ -1,3 +1,16 @@
+$base-bg-color: rgb(17, 24, 39);
+
 table {
     width: 100% !important;
+    background-color: $base-bg-color !important;
+    border: none;
+    outline: none;
+    tbody {
+        tr {
+            td {
+                background-color: $base-bg-color;
+                color: #fff;
+            }
+        }
+    }
 }
