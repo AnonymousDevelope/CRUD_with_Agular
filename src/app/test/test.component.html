@@ -1,0 +1,35 @@
+<div>
+  <fieldset>
+    <legend>Add New Work</legend>
+    <div class="container input-group">
+      <input
+        type="text"
+        required=""
+        [placeholder]="'work name...'"
+        name=""
+        [(ngModel)]="workName"
+      />
+      <div class="listBtn" [ngSwitch]="updateAddSwitch">
+        <button
+          [disabled]="!workName"
+          class="btn btn-primary"
+          (click)="onAddNewWork()"
+          *ngSwitchCase="'add'"
+        >
+          Add
+        </button>
+        <button
+          [disabled]="!workName"
+          class="btn btn-primary"
+          (click)="onUpdateWork()"
+          *ngSwitchCase="'update'"
+        >
+          Update
+        </button>
+      </div>
+    </div>
+    <ng-container>
+      <app-app-test (selectWorks)="selectWorks($event)" (updateAddSwitch)="updateAddSwitch = $event" [class]="'w-100'"></app-app-test>
+    </ng-container>
+  </fieldset>
+</div>

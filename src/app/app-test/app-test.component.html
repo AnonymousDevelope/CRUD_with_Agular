@@ -1,0 +1,23 @@
+<ng-container > 
+    <table class="table table-striped" [border]="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Work</th>
+                <th>Title</th>
+                <th>Instructions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let work of works">
+                <td>{{work?.id}}</td>
+                <td>{{work?.work}}</td>
+                <td>{{work?.title}}</td>
+                <td class="d-flex gap-4">
+                    <button class="btn btn-danger" (click)="onDelete(work.id)"><i class="bi bi-trash"></i></button>
+                    <button class="btn btn-primary" (click)="onEdit(work.id)"><i class="bi bi-pencil"></i></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</ng-container>
